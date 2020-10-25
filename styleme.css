@@ -1,0 +1,25 @@
+body {
+	font-family: "Courier New";
+	color: white;
+	background-color: rgb(82, 86, 89);
+}
+h1, h2, h3 {
+	color: cornflowerblue;
+	font-family: "Comic Sans MS";
+}
+img {
+	max-height: 300px;
+}
+.row {
+	display: flex;
+}
+.column {
+	flex: 50%;
+	padding: 5px;
+}
+#desc strong{
+	color: yellow;
+}
+#validators {
+	float: right;
+}
