@@ -1,0 +1,82 @@
+main {
+	display: grid;
+	grid-template-rows: 10% 10% 70% 10%;
+	grid-template-columns: 25% 50% 25%;
+}
+header {
+	grid-row: 1/2;
+	grid-column: 1/4;
+	background-color: paleturquoise;
+}
+h3 {
+	width: 2%;
+	margin: auto;
+	padding: 1vh;
+}
+nav {
+	grid-row: 2/3;
+	grid-column: 1/4;
+	display: flex;
+	background-color: darkslategrey;
+}
+.menu {
+	width: 10%;
+	text-align: center;
+	color: white;
+	background-color: darkslategrey;
+	border-right: 1px solid black;
+}
+section {
+	grid-row: 3/4;
+	grid-column: 1/4;
+	display: flex;
+	flex-flow: row wrap;
+}
+.column {
+	height: 50vh;
+}
+.column > p {
+	grid-row: 3/4;
+	padding-left: 1vw;
+}
+#col1 {
+	grid-column: 1/2;
+	width: 25%;
+	background-color: grey;
+}
+#col2 {
+	grid-column: 2/3;
+	width: 50%;
+	background-color: darkgrey;
+}
+#col3 {
+	grid-column: 3/4;
+	width: 25%;
+	background-color: lightgrey;
+}
+@media screen and (max-width: 559px) {
+	.column {
+		height: 25vh;
+	}
+	#col1 {
+		width: 50%;
+		background-color: grey;
+		order: 1;
+	}
+	#col2 {
+		width: 100%;
+		background-color: darkgrey;
+		order: 3;
+	}
+	#col3 {
+		width: 50%;
+		background-color: lightgrey;
+		order: 2;
+	}
+}
+footer {
+	grid-row: 4/5;
+	grid-column: 1/4;
+	color: white;
+	background-color: darkslategrey;
+}
