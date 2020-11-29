@@ -1,0 +1,27 @@
+.circle {
+	background-color: #1ABC9C;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+#canvas {
+	text-align: center;
+}
+#controls {
+	text-align: center;
+	padding: 20px;
+}
+
+#controls > label {
+	padding-left: 10px;
+}
+
+#controls > input[type~="button"] {
+	width: 50px;
+}
+
+#controls > input[type="button"] {
+	clear: left;
+	
+	background-color: #1ABC9C;
+}
