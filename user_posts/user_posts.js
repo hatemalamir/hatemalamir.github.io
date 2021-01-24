@@ -3,7 +3,7 @@ $(function() {
     const userId = $("#userId").val();
     if(userId)
       $.get(
-        "http://jsonplaceholder.typicode.com/posts",
+        "https://jsonplaceholder.typicode.com/posts",
         {"userId": userId}
       ).done((data) => {
         const posts= $("#posts");
